@@ -13,6 +13,11 @@ app.get("/", (req, resp) => {
     resp.send("Hello World!");
 })
 
+app.get("/tarefas", (req, resp) => {
+    //Resposta
+    resp.send("Utilizando GET nessa rota!");
+})
+
 //Tomada do servidor
 app.listen(port, () =>{
     console.log(`Servidor funcionando na porta ${port}`);

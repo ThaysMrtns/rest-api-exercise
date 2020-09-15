@@ -14,8 +14,14 @@ app.get("/", (req, resp) => {
 })
 
 app.get("/tarefas", (req, resp) => {
-    //Resposta
-    resp.send("Utilizando GET nessa rota!");
+    db.all(`SELECT * FROM TAREFAS`, (err, tarefas) => {
+        //Resposta, lista de todas as tarefas do banco de dados 
+        resp.send(tarefas);
+    })
+})
+
+app.post("/tarefas", (req, resp) => {
+    resp.send("POST, requisição funcionando");
 })
 
 //Tomada do servidor

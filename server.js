@@ -5,18 +5,32 @@ const app = express(); //Servidor
 const port = 8080; //Porta
 const BodyParser = require('body-parser'); //Middleware
 
+const fetch = require('node-fetch');
+const cors = require('cors');
 
+
+app.use(cors()); //Utilizando o cors
 app.use(BodyParser.json()); //Utilizando o Middleware
 
-//Rotas
-app.get("/tarefas", (req, resp) => {
-    db.all(`SELECT * FROM TAREFAS`, (err, tarefas) => { 
+fetch("http://localhost:8080/tarefas")
+.then ((response) => {response.json()})
+.then ((data) => console.log(data))
+/*response.json().then(data => {
+    console
+  });*/
+
+//Rotas read
+app.get("/tarefas/:id", (req, resp) => {
+    db.get(`SELECT * FROM TAREFAS where id = ?`, [req.params.id], 
+    (err, tarefas) => { 
         resp.send(JSON.stringify({results: tarefas})); //Trafegar dados como string num formato de objeto
     });
 });
 
-app.post("/tarefas", (req, resp) => {
-   db.run(`INSERT INTO TAREFAS (titulo, descricao, status) VALUES (?, ?, ?)`, [req.body.titulo,req.body.descricao,req.body.status], (err) =>{
+app.post("/tarefas/:id", (req, resp) => {
+   db.run(`INSERT INTO TAREFAS (titulo, descricao, status) VALUES (?, ?, ?)`, 
+   [req.body.titulo,req.body.descricao,req.body.status], 
+   (err) =>{
         if(err){
             console.log("Erro ao inserir tarefas no banco de dados");
         }

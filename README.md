@@ -4,7 +4,7 @@
 ##### A API REST TODO-APP pode ser utilizada para gerenciar anotações de tarefas do usuário.
 # Tecnologias utilizadas
 ##### Vscode, Node.js, Nodemon e Sqlite3.
-##### https://code.visualstudio.com/ https://nodejs.org/en/ https://www.sqlite.org/index.html
+##### https://code.visualstudio.com/ https://nodejs.org/en/ https://www.npmjs.com/package/nodemon https://www.sqlite.org/index.html
 # Instalação do Node.js
 #### Siga este breve tutorial caso você não saiba como instalar as ferramentas e dependências necessárias para a utilização desta API.
 ##### Links - https://nodejs.org/en/download/ https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/ambiente_de_desenvolvimento

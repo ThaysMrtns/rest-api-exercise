@@ -9,4 +9,6 @@
 ##### `node -v` - checa a instalação do node
 ##### `npm -v` - checa a instalação do npm
 # Clonar projeto na sua máquina
-##### 
+##### No início da página haverá um botão verde escrito code. Nele você terá algumas opções e entre elas executar um download e a url da API. Você poderá escolher quais das opções mais lhe agrada. 
+### Sugestão de editor de código
+##### Link - https://code.visualstudio.com/download

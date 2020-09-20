@@ -18,3 +18,5 @@
 # Instalação de dependências
 ##### Após ter o NodeJs e o NPM corretamente instalados e a API clonada na sua máquina. Abra seu editor de código. No meu caso, darei o exemplo com o Vscode. Abra o terminal e digite o comando.
 ##### `npm install` - instalará as dependências da API.
+### Sugestão de ferramenta para interagir com a API Todo-app
+##### Link - https://insomnia.rest/download/

@@ -12,3 +12,6 @@
 ##### No início da página haverá um botão verde escrito code. Nele você terá algumas opções e entre elas executar um download e a url da API. Você poderá escolher quais das opções mais lhe agrada. 
 ### Sugestão de editor de código
 ##### Link - https://code.visualstudio.com/download
+# Instalação de dependências
+##### Após ter o NodeJs e o NPM corretamente instalados e a API clonada na sua máquina. Abra seu editor de código. No meu caso, darei o exemplo com o Vscode. Abra o terminal e digite o comando.
+##### `npm install` - instalará as dependências da API.

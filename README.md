@@ -22,3 +22,6 @@
 ##### `npm install` - instalará as dependências da API.
 ### Sugestão de ferramenta para interagir com a API Todo-app
 ##### Link - https://insomnia.rest/download/
+# Conteúdo e estrutura do banco de dados
+##### O banco de dados, com o nome de arquivo `database.db`, armazena as informações das tarefas que forem adicionadas para ele. Trata-se de um banco de dados relacional e a linguagem utilizada está no formato Mysql. O `database.db` possui uma única tabela `TAREFAS` com 4 colunas, `ID(PRIMARY KEY)`, `TITULO`, `DESCRICAO` E `STATUS`. 
+##### Link - https://www.oracle.com/br/database/what-is-a-relational-database/#:~:text=Em%20um%20banco%20de%20dados,entre%20os%20pontos%20de%20dados.
